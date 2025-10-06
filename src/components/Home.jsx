@@ -23,7 +23,10 @@ export const Home = () => {
   useEffect(() => {
     if (!filterProducts || category == "undefined") setfilterProduct(products);
 
-    if (category != "undefined") getProductsCategory();
+    if (category != "undefined") {
+      // getProductsCategory();
+      setfilterProduct(products.filter((p) => p.category == category));
+    }
   }, [category, products]);
 
   return products ? (

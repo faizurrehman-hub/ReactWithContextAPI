@@ -16,9 +16,9 @@ export const Nav = () => {
   return (
     <>
       <nav className="h-full w-[15%] bg-zinc-50 p-4 flex flex-col items-center">
-        <a className="py-2 px-3 font-semibold mb-3 border-2 border-red-300 text-red-300 rounded-md">
+        <Link to="/Create" className="py-2 px-3 font-semibold mb-3 border-2 border-red-300 text-red-300 rounded-md">
           Add New Product
-        </a>
+        </Link>
         <hr className="w-[80%] " />
         <h1 className="text-xl font-semibold">Category filter</h1>
 
